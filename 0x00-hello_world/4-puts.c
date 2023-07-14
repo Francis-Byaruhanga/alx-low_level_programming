@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * Function main - this is the entry point for the program
- * Puts - prints statement as is
- * Return: always 0 (success)
+ * main - Entry point of the program
+ * 
+ * Return: 0 on successful program execution
  */
 int main(void)
 {
