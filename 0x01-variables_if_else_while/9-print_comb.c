@@ -8,24 +8,17 @@
 
 int main(void)
 {
-	int i, j;
+	int i;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 0 ; i < 10 ; i++)
 	{
-		for (j = i; j <= 57; j++)
+		if (i == 9)
+			putchar(i + '0');
+		else
 		{
-	
-			putchar(i);
-			if (i != j)
-			{
-				putchar(j);
-			}
-
-			if (i != 56 || j != 57)
-			{
-				putchar(44);
-				putchar(32);
-			}
+			putchar(i + '0');
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	return (0);
