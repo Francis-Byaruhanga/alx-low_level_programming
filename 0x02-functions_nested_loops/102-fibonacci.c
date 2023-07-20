@@ -18,10 +18,10 @@ int main(void)
 	{
 		if (j != 2036011074)
 		{
-			printf("%1d, ", j);
+			printf("%ld, ", j);
 		} else
 		{
-			printf("%1d\n", j);
+			printf("%ld\n", j);
 		}
 		sum = j + k;
 		j = k;
