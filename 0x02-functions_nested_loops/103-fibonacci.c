@@ -8,13 +8,21 @@
 
 int main(void)
 {
-	long long first = 0;
-	long long second = 1;
-	long long sum = 1;
-	long long next = first + second;
+	long first = 0;
+	long second = 1;
+	long sum = 1;
+	long next = first + second;
 
-	while (next <= 4000000)
+	long limit = 4000000;
+
+	while (1)
 	{
+		next = first + second;
+		if (next > limit)
+		{
+			break;
+		}
+
 		if (next % 2 == 0)
 		{
 			sum += next;
@@ -22,10 +30,9 @@ int main(void)
 
 		first = second;
 		second = next;
-		next = first + second;
 	}
 
-	printf("sum: %lld\n", sum);
+	printf("sum of evened-value: %ld\n", sum);
 
 	return (0);
 }
